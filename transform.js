@@ -47,6 +47,7 @@ function isString(str) {
 }
 
 function rpn(input) {
+    input = input.replace(/\s/g,'');
     let output  = [];
     let stack = [];
     let operators = new Map([
